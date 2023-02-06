@@ -31,7 +31,7 @@ function moviesAverageOfDirector(array, director) {
   const puntuacionMedia = sumaCalificaciones / peliculasDirector.length;
 
   //Redondear promedio 2 decimales
-  const redondeo = Math.floor(puntuacionMedia)
+  const redondeo=Number(puntuacionMedia.toFixed(2));
   return redondeo;
 }
 
@@ -84,7 +84,8 @@ function moviesAverageByCategory(array, category) {
     moviesPuntuacion.length;
 
 
-  return Math.floor(mediaScore);
+  return Number(mediaScore.toFixed(2));
+  
 }
 
 
